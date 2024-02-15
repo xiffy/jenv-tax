@@ -7,3 +7,4 @@ op dit moment is er ookeen RJ taxo die precies hetzlfde doet als dezerepository
 In deze repo zit een workflow die
 - een taxonomyPackage produceert
 - de 'website' repository aanroept om de integrations workflow uit te voeren.
+- artifacts? me grootje
