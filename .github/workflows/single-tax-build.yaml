@@ -19,7 +19,7 @@ jobs:
         with: # recursive, archive name and path without extension, what to archive
           args: zip -r build/${{ env.TAX_NAME }}  ./${{ env.TAX_NAME }}
 
-      - uses: actions/upload-artifact@master
+      - uses: actions/upload-artifact@v4
         id: artifact-upload-step
         with:
           name: ${{ env.TAX_NAME }}-artifact
