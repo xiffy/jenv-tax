@@ -25,10 +25,6 @@ jobs:
           name: ${{ env.TAX_NAME }}-artifact
           path: build/${{ env.TAX_NAME }}.zip
 
-      - name: Get the URL of the artifact
-        run: |
-          echo 'Artifact URL is ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts/${{ steps.artifact-upload-step.outputs.artifact-id }}'
-
       - name: Ping Integration
         env:
           archive_url: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts/${{ steps.artifact-upload-step.outputs.artifact-id }}
