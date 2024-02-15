@@ -29,6 +29,10 @@ jobs:
         run: |
           echo 'Artifact URL is ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts/${{ steps.artifact-upload-step.outputs.artifact-id }}'
 
+      - name: Is it
+        run: |
+          echo "${{ secrets.PAT }}"
+
       - name: Ping Integration
         env:
           archive_url: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts/${{ steps.artifact-upload-step.outputs.artifact-id }}
