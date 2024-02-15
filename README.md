@@ -8,4 +8,4 @@ In deze repo zit een workflow die
 - een taxonomyPackage produceert
 - de 'website' repository aanroept om de integrations workflow uit te voeren.
 - lees daar verder
-- 
+- ...
